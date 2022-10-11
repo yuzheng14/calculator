@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Display from "./Display";
 import ButtonPanel from "./ButtonPanel";
+import "../styles/App.css"
 
 export default class App extends Component{
     constructor(props){

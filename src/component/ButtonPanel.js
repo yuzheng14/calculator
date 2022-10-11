@@ -1,4 +1,5 @@
 import Button from "./Button";
+import "../styles/ButtonPanel.css"
 
 /**
  * 所有按钮的 Panel
