@@ -12,27 +12,27 @@ export default function ButtonPanel(props) {
     return(
         <div className="component-button-panel">
             <div>
-                <Button name="AC" />
-                <Button name="+/-" />
-                <Button name="%"/>
-                <Button name="÷" orange/>
+                <Button name="AC" clickHandler={props.clickHandler}/>
+                <Button name="+/-" clickHandler={props.clickHandler}/>
+                <Button name="%"clickHandler={props.clickHandler}/>
+                <Button name="÷" clickHandler={props.clickHandler} orange/>
             </div>
             <div>
-                <Button name="7" />
-                <Button name="8" />
-                <Button name="9"/>
-                <Button name="×" orange/>
+                <Button name="7" clickHandler={props.clickHandler}/>
+                <Button name="8" clickHandler={props.clickHandler}/>
+                <Button name="9"clickHandler={props.clickHandler}/>
+                <Button name="×" clickHandler={props.clickHandler} orange/>
             </div>
             <div>
-                <Button name="4" />
-                <Button name="5" />
-                <Button name="6"/>
-                <Button name="-" orange/>
+                <Button name="4" clickHandler={props.clickHandler}/>
+                <Button name="5" clickHandler={props.clickHandler}/>
+                <Button name="6"clickHandler={props.clickHandler}/>
+                <Button name="-" clickHandler={props.clickHandler} orange/>
             </div>
             <div>
-                <Button name="0" wide/>
-                <Button name="." />
-                <Button name="=" orange/>
+                <Button name="0" clickHandler={props.clickHandler} wide/>
+                <Button name="." clickHandler={props.clickHandler}/>
+                <Button name="=" clickHandler={props.clickHandler} orange/>
             </div>
         </div>
     )
