@@ -23,7 +23,10 @@ export default function calculate(obj, buttonName) {
         // 如果已经存在运算符，则更新被运算数（state.next)
         if (obj.operation) {
             // 根据 obj.next 决定如何更新 stat.next
-            return { next: (obj.next || "") + buttonName }
+            if (obj.next) {
+                return { next: (obj.next === "0" ? "" : obj.next) + buttonName }
+            }
+            return { next: buttonName };
         }
 
         // 如果没有运算符且存在 state.next
